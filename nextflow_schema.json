@@ -274,6 +274,24 @@
                     "hidden": true
                 }
             }
+        },
+        "fastp": {
+            "title": "fastp",
+            "type": "object",
+            "description": "",
+            "default": "",
+            "fa_icon": "fas fa-align-justify",
+            "properties": {
+                "adapters": {
+                    "type": "string"
+                },
+                "save_trimmed_fail": {
+                    "type": "boolean"
+                },
+                "save_merged": {
+                    "type": "boolean"
+                }
+            }
         }
     },
     "allOf": [
@@ -291,6 +309,9 @@
         },
         {
             "$ref": "#/definitions/generic_options"
+        },
+        {
+            "$ref": "#/definitions/fastp"
         }
     ]
 }
